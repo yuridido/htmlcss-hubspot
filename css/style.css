@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: arial;
+}
+
 .clearfix::after {
     content: '';
     display: table;
@@ -14,11 +18,78 @@
     width: 80%;
     max-width: 1280px;
     height: 300px;
+    margin: 0 auto;
 }
+
+/*INIZIO PARTE FISSATA*/
 
 .bg-chiaro {
     background-color: #f5f8fa;
 }
+
+.bg-chiaro.fissato {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #cbd6e2;
+    z-index: 99;
+}
+
+.fissato .container {
+    height: 70px
+    }
+
+.fissato .dx {
+    float: right;
+    line-height: 70px;
+}
+
+.fissato li {
+    float: left;
+    list-style: none;
+    padding: 0 16px;
+}
+
+.sx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sx a {
+    text-decoration: none;
+    color: #33475b;
+}
+
+.sx i {
+    color: #33475b;
+}
+.dx i {
+    color: #00a4bd;
+}
+
+.sx li:first-child {
+    padding-left: 0;
+    border-right: 1px solid #cbd6e2;
+}
+
+.btn-chiaro {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ff7a59;
+    border: 1px solid #ff7a59;
+    border-radius: 5px;
+}
+
+.btn-scuro {
+    padding: 10px 20px;
+    background-color: #ff7a59;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+/*FINE PARTE FISSATA*/
+
 
 .bg-bianco {
     background-color: white;
