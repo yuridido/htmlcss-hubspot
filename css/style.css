@@ -17,7 +17,7 @@ body {
 .container {
     width: 80%;
     max-width: 1280px;
-    height: 300px;
+    /* height: 300px; */
     margin: 0 auto;
 }
 
@@ -29,7 +29,7 @@ body {
 
 .bg-chiaro.fissato {
     width: 100%;
-    position: fixed;
+    position: relative;
     top: 0;
     border-bottom: 1px solid #cbd6e2;
     z-index: 99;
@@ -73,6 +73,10 @@ body {
     border-right: 1px solid #cbd6e2;
 }
 
+.dx li:last-child {
+    padding-right: 0;
+}
+
 .btn-chiaro {
     padding: 10px 20px;
     background-color: rgba(0, 0, 0, 0);
@@ -90,6 +94,44 @@ body {
 }
 /*FINE PARTE FISSATA*/
 
+/*INIZIO FASCIA ALTA*/
+.testa {
+    height: 70px;
+    position: relative;
+}
+
+#logo {
+    height: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul {
+    float: right;
+    line-height: 70px;
+}
+
+nav li {
+    float: left;
+    list-style: none;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #33475b;
+ 
+}
+
+nav li:last-child {
+    padding-right: 0;
+
+
+
+/*FINE FASCIA ALTA*/
 
 .bg-bianco {
     background-color: white;
