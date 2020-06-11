@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 80%;
+    max-width: 1280px;
+    height: 300px;
+}
+
+.bg-chiaro {
+    background-color: #f5f8fa;
+}
+
+.bg-bianco {
+    background-color: white;
+}
+
+.bg-rosa {
+    background-color: #fff3ee;
+}
+
+main {
+    background-color: #f5f8fa;
+}
+
+.gradient {
+    background-color: #00b0b2;
+    background-image: linear-gradient(to top right, #01a4bd, #00bca6);
+}
