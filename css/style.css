@@ -10,7 +10,7 @@ body {
 }
 
 .clearfix::after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
 }
@@ -99,6 +99,7 @@ body {
 .testa {
     height: 70px;
     position: relative;
+    margin-top: 70px;
 }
 
 #logo {
@@ -190,8 +191,8 @@ h1 {
 
 main {
     background-color: #f5f8fa;
-    height: 1000px;
-    padding: 50px 0;
+    padding: 40px 0;
+    color: #33475c;
 }
 
 .cubo {
@@ -203,6 +204,64 @@ main {
 .cubo img {
     height: 200px;
 }
+
+.box.ombrato {
+    background-color: white;
+    box-shadow: 0 0 11px #e1e5e9;
+    margin: 40px 0;
+}
+
+.ombrato img {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.box-img {
+    width: 100%;
+}
+
+.cento {
+    padding: 50px;
+}
+
+.trenta {
+    width: 30%;
+    text-align: center;
+    float: left;
+}
+
+.settanta {
+    width: 70%;
+    float: left;
+}
+
+.settanta h4 {
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.pop-fea i {
+    color: #ff7a59;
+}
+
+.pop-fea li {
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.linea {
+    display: inline-block;
+    width: 60%;
+    border: 1px solid #55697e;
+}
+
+.card {
+    width: 30%;
+    height: 600px;
+}
+
+/*FINE MAIN*/
 
 .gradient {
     background-color: #00b0b2;
