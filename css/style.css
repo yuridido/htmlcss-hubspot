@@ -6,10 +6,11 @@
 
 body {
     font-family: arial;
+    line-height: 1.5;
 }
 
 .clearfix::after {
-    content: '';
+    content: "";
     display: table;
     clear: both;
 }
@@ -29,7 +30,7 @@ body {
 
 .bg-chiaro.fissato {
     width: 100%;
-    position: relative;
+    position: fixed;
     top: 0;
     border-bottom: 1px solid #cbd6e2;
     z-index: 99;
@@ -166,6 +167,7 @@ nav li:last-child {
 
 h1 {
     font-size: 45px;
+    line-height: 1.2;
 }
 
 .banner button {
@@ -180,7 +182,8 @@ h1 {
     height: 86px;
     background-color: #afebe4;
     z-index: 2;
-    border: 2px solid #33475c;
+    border-top: 2px solid #33475c;
+    border-bottom: 2px solid #33475c;
 }
 
 /*INIZIO MAIN*/
@@ -192,8 +195,9 @@ main {
 }
 
 .cubo {
-    margin: 20px 0;
-    position: absolute;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .cubo img {
