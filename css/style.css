@@ -256,9 +256,12 @@ main {
     border: 1px solid #55697e;
 }
 
+
 .card {
     width: 30%;
     height: 600px;
+    text-align: center;
+    padding: 40px 20px;
 }
 
 /*FINE MAIN*/
