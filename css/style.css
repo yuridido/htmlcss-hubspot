@@ -15,10 +15,10 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 65%;
     max-width: 1280px;
-    /* height: 300px; */
     margin: 0 auto;
+    position: relative;
 }
 
 /*INIZIO PARTE FISSATA*/
@@ -123,13 +123,12 @@ nav li {
 nav a {
     text-decoration: none;
     color: #33475b;
- 
+
 }
 
 nav li:last-child {
     padding-right: 0;
-
-
+}
 
 /*FINE FASCIA ALTA*/
 
@@ -138,11 +137,67 @@ nav li:last-child {
 }
 
 .bg-rosa {
-    background-color: #fff3ee;
+    background-image: linear-gradient(to top right, #fff3ee, #fff1ee);
+    height: 600px;
+    position: relative;
 }
+
+/*INIZIO BANNER*/
+
+.bg-rosa img {
+    max-height: 80%;
+    position: absolute;
+    bottom: -75px;
+    right: 10%;
+}
+
+.bg-rosa .container {
+    padding: 50px 0;
+}
+
+.banner {
+    width: 40%;
+    color: #33475b;
+}
+
+.banner p {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.banner button {
+    font-weight: bold;
+    padding: 20px 40px;
+}
+
+/*FINE BANNER*/
+
+.fascia {
+    position: relative;
+    height: 86px;
+    background-color: #afebe4;
+    z-index: 2;
+    border: 2px solid #33475c;
+}
+
+/*INIZIO MAIN*/
 
 main {
     background-color: #f5f8fa;
+    height: 1000px;
+    padding: 50px 0;
+}
+
+.cubo {
+    margin: 20px 0;
+    position: absolute;
+}
+
+.cubo img {
+    height: 200px;
 }
 
 .gradient {
