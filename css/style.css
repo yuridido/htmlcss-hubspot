@@ -259,9 +259,36 @@ main {
 
 .card {
     width: 30%;
-    height: 600px;
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 15px 20px 15px;
+    float: left;
+}
+
+.card p {
+    margin-bottom: 40px;
+}
+
+.card ul {
+    margin-bottom: 30px;
+
+}
+
+.card li {
+    list-style: none;
+    text-align: left;
+}
+
+.card i {
+    color: #ff7a59;
+}
+
+.card h4 {
+    margin: 20px 0;
+}
+
+.cards .card:nth-child(2) {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /*FINE MAIN*/
@@ -269,4 +296,163 @@ main {
 .gradient {
     background-color: #00b0b2;
     background-image: linear-gradient(to top right, #01a4bd, #00bca6);
+    text-align: center;
+    padding: 40px 0 40px 0;
+    color: white;
+}
+
+
+/* INIZIO PARTE SFUMATA */
+
+.griglia {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.gri-quadro {
+    height: 250px;
+    width: calc(100% / 4);
+    padding: 20px;
+    float: left;
+}
+
+.gri-terzo {
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+}
+
+.numb::after {
+    content: '+';
+    position: absolute;
+    font-size: 20px;
+}
+
+.numb {
+    font-size: 50px;
+    font-weight: bolder;
+    position: relative;
+}
+
+.sopra {
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.sotto {
+    border-right: 1px solid white;
+}
+
+.sopra:first-child {
+    border-left: none;
+}
+
+.sotto:last-child {
+    border-right: none;
+}
+
+/* FINE PARTE SFUMATA */
+
+
+.mini-container {
+    width: 100%;
+    padding: 40px;
+    color: #33475c;
+}
+
+.cubetto {
+    width: calc(100% / 5);
+    text-align: left;
+    float: left;
+    padding: 20px;
+}
+
+.cubetto h2 {
+    font-size: 35px;
+}
+
+.cubetto p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.loghetti {
+    width: calc((100% / 5)*4);
+    float: left;
+    padding: 0 40px;
+
+}
+
+.logo {
+    width: 150px;
+    float: left;
+    padding: 20px;
+}
+
+.logo img {
+    margin: 0 auto;
+    width: 110px;
+}
+
+.cta-bassa {
+    width: 40%;
+    height: 600px;
+    padding: 10% 0;
+    color: #33475c;
+    float: left;
+
+}
+
+.cta-bassa button {
+    font-weight: bold;
+    padding: 20px 40px;
+    margin: 40px 0;
+}
+
+.cta-bassa h2 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.cta-bassa p:last-child {
+    font-size: 11px;
+}
+
+.img-cta {
+    width: 60%;
+    height: 500px;
+    position: relative;
+    float: left;
+}
+
+.img-cta img {
+    height: 400px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+/* INIZIO FOOTER */
+
+footer {
+    background-color: #33475b;
+    color: #cbd6e2;
+    padding: 40px 0;
+}
+
+.elenco {
+    width: 25%;
+    float: left;
+    line-height: 200%;
+}
+
+.elenco ul {
+    list-style: none;
+}
+
+.elenco li:first-child {
+    font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 15px;
+    color: white;
 }
