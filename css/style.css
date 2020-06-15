@@ -340,15 +340,15 @@ main {
 }
 
 .sotto {
-    border-right: 1px solid white;
+    border-left: 1px solid white;
 }
 
 .sopra:first-child {
     border-left: none;
 }
 
-.sotto:last-child {
-    border-right: none;
+.sotto:nth-child(5) {
+    border-left: none;
 }
 
 /* FINE PARTE SFUMATA */
@@ -361,10 +361,10 @@ main {
 }
 
 .cubetto {
-    width: calc(100% / 5);
+    width: 30%;
     text-align: left;
     float: left;
-    padding: 20px;
+    padding: 20px 130px 20px 20px;
 }
 
 .cubetto h2 {
@@ -377,21 +377,21 @@ main {
 }
 
 .loghetti {
-    width: calc((100% / 5)*4);
+    width: 70%;
     float: left;
     padding: 0 40px;
 
 }
 
 .logo {
-    width: 150px;
+    width: calc(100% / 4);
     float: left;
     padding: 20px;
+    text-align: center;
 }
 
 .logo img {
-    margin: 0 auto;
-    width: 110px;
+    width: 90%;
 }
 
 .cta-bassa {
@@ -455,4 +455,34 @@ footer {
     font-size: 110%;
     margin-bottom: 15px;
     color: white;
+}
+
+.foot-medio {
+    width: 100%;
+    margin: 40px 0;
+    position: relative;
+}
+
+.foot-medio ul {
+    list-style: none;
+    margin: 30px auto;
+}
+
+.foot-medio li {
+    float: left;
+    margin: 0 15px;
+    font-size: 140%;
+}
+
+.btn-spec {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #cbd6e2;
+    color: #33475b;
+    border: none;
+    border-radius: 5px;
+}
+
+.social i {
+    margin: 0 10px;
 }
