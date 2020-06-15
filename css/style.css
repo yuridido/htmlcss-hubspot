@@ -464,8 +464,9 @@ footer {
 }
 
 .foot-medio ul {
+    display: inline-block;
     list-style: none;
-    margin: 30px auto;
+    margin: 0 auto;
 }
 
 .foot-medio li {
@@ -485,4 +486,25 @@ footer {
 
 .social i {
     margin: 0 10px;
+}
+
+.foot-medio {
+    border-bottom: 1px solid #cbd6e2;
+    text-align: center;
+}
+
+.credits {
+    float: left;
+}
+
+.legal {
+    float: right;
+}
+
+.legal li {
+    float: left;
+    list-style: none;
+    padding: 0 20px;
+    font-weight: bolder;
+
 }
