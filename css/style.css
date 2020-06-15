@@ -22,6 +22,10 @@ body {
     position: relative;
 }
 
+strong {
+    font-weight: bold;
+}
+
 /*INIZIO PARTE FISSATA*/
 
 .bg-chiaro {
@@ -45,11 +49,53 @@ body {
     line-height: 70px;
 }
 
-.fissato li {
+.sx li {
     float: left;
     list-style: none;
     padding: 0 16px;
 }
+
+.dx li {
+    float: left;
+    list-style: none;
+    padding: 0 16px;
+}
+
+.rombetto {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 46px;
+    left: 73px;
+    z-index: 101;
+    transform: rotate(45deg);
+    border-top: 1px solid #cbd6e2;
+    border-left: 1px solid #cbd6e2;
+    display: none;
+}
+
+.tendina {
+    width: 110px;
+    background-color: white;
+    padding: 20px 10px;
+    position: absolute;
+    top: 55px;
+    z-index: 100;
+    border: 1px solid #cbd6e2;
+    display: none;
+}
+
+.tendina li {
+    list-style: none;
+    padding: 10px 16px;
+
+}
+
+.capotenda1:hover .rombetto {
+    display: block;
+}
+
 
 .sx {
     position: absolute;
@@ -93,6 +139,8 @@ body {
     border: 1px solid white;
     border-radius: 5px;
 }
+
+
 /*FINE PARTE FISSATA*/
 
 /*INIZIO FASCIA ALTA*/
@@ -237,7 +285,7 @@ main {
 
 .settanta h4 {
     margin: 20px 0;
-    display: inline-block;
+    float: left;
 }
 
 .pop-fea i {
@@ -250,9 +298,19 @@ main {
     margin-right: 20px;
 }
 
-.linea {
-    display: inline-block;
+.cont-linea {
     width: 60%;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    height: 24px;
+}
+
+.linea {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     border: 1px solid #55697e;
 }
 
@@ -505,6 +563,6 @@ footer {
     float: left;
     list-style: none;
     padding: 0 20px;
-    font-weight: bolder;
+    font-weight: bold;
 
 }
