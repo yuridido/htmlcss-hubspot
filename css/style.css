@@ -49,10 +49,10 @@ strong {
     line-height: 70px;
 }
 
-.sx li {
+.sx>li {
     float: left;
     list-style: none;
-    padding: 0 16px;
+    padding: 20px 16px;
 }
 
 .dx li {
@@ -66,8 +66,8 @@ strong {
     height: 20px;
     background-color: white;
     position: absolute;
-    top: 46px;
-    left: 73px;
+    top: 41px;
+    left: 90px;
     z-index: 101;
     transform: rotate(45deg);
     border-top: 1px solid #cbd6e2;
@@ -76,23 +76,36 @@ strong {
 }
 
 .tendina {
-    width: 110px;
+    width: 130px;
     background-color: white;
     padding: 20px 10px;
     position: absolute;
-    top: 55px;
+    top: 50px;
     z-index: 100;
     border: 1px solid #cbd6e2;
+    border-radius: 3px;
     display: none;
 }
 
 .tendina li {
+    text-align: left;
     list-style: none;
-    padding: 10px 16px;
+    padding: 10px 20px;
 
 }
 
-.capotenda1:hover .rombetto {
+.tendina li:hover {
+    background-color: #cbd6e2;
+    cursor: pointer;
+}
+
+.capotenda1 {
+    position: relative;
+    padding-left: 0;
+    border-right: 1px solid #cbd6e2;
+}
+
+.capotenda1:hover .down {
     display: block;
 }
 
@@ -115,10 +128,6 @@ strong {
     color: #00a4bd;
 }
 
-.sx li:first-child {
-    padding-left: 0;
-    border-right: 1px solid #cbd6e2;
-}
 
 .dx li:last-child {
     padding-right: 0;
